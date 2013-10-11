@@ -1,0 +1,46 @@
+#AutoSwitch basic properties
+#Fri Oct 11 17:42:30 EDT 2013
+TOGGLE_KEY=F10
+BLOCKS_SP=true
+BLOCKS_MP=true
+PULSE_KEY=V
+DEBUG=false
+DEFAULT_ENABLED=true
+MOBS_SP=true
+USE_IN_CREATIVE=false
+MOBS_MP=true
+TOOL_SELECTION_MODE=FAST NONSTANDARD
+# DEFAULT_ENABLED
+#     This option determines whether to
+#     enable AutoSwitch on new worlds
+#     and on worlds AutoSwitch hasn't
+#     been used on before.
+# TOOL_SELECTION_MODE
+#     FAST STANDARD picks the best standard tool,
+#     SLOW STANDARD picks the worst standard tool,
+#     FAST NONSTANDARD picks the best tool,
+#     ignoring what's standard.
+# BLOCKS_SP
+#     This option determines whether to use
+#     AutoSwitch on blocks in singleplayer.
+# BLOCKS_MP
+#     This option determines whether to use
+#     AutoSwitch on blocks in multiplayer.
+# MOBS_SP
+#     This option determines whether to use
+#     AutoSwitch on entities in singleplayer.
+#     DOES NOT WORK in Minecraft 1.6+ due to MC-28289
+# MOBS_MP
+#     This option determines whether to use
+#     AutoSwitch on entities in multiplayer.
+#     DOES NOT WORK in Minecraft 1.6+ due to MC-28289
+# TOGGLE_KEY
+#     This key toggles AutoSwitch.
+# PULSE_KEY
+#     This key temporarily toggles
+#     AutoSwitch while it's held down.
+# DEBUG
+#     Log debug output to
+#     .minecraft -> mods -> AutoSwitch -> DEBUG.txt
+# USE_IN_CREATIVE
+#     Use AutoSwitch when in creative mode
