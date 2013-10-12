@@ -73,7 +73,7 @@ block {
     I:"Ore Berry One"=1485
     I:"Ore Berry Two"=1486
     I:"Ores Gravel"=1488
-    I:"Ores Slag"=484
+    I:"Ores Slag"=1475
     I:Punji=3232
     I:"Redstone Machines"=3226
     I:"Seared Slab"=3230
@@ -263,7 +263,7 @@ tools {
     I:Excavator=14069
     I:"Frying Pan"=14058
     I:Hammer=14070
-    I:Hoe=14054
+    I:Hoe=31727
     I:Longbow=14062
     I:Longsword=14056
     I:"Lumber Axe"=14061
@@ -284,7 +284,7 @@ tools {
 "ultra hardcore changes" {
     # Gives all tier 1 patterns when pattern chest is placed
     B:"Add Patterns to Pattern Chests"=false
-    B:"Add World Border"=false
+    B:"Add World Border"=true
 
     # Makes recipes for gold apples, carrots, and melon potions more expensive
     B:"Change Crafting Recipes"=false
@@ -292,7 +292,7 @@ tools {
     B:"Necrotic modifier only heals on hostile mob kills"=false
     B:"Passive Health Regen"=true
     B:"Players drop heads on death"=false
-    I:"World Border Radius"=1000
+    I:"World Border Radius"=5000
 }
 
 
@@ -352,7 +352,7 @@ worldgen {
     B:"Generate Aluminum"=true
     B:"Generate Aluminum Bushes"=true
     B:"Generate Cobalt and Ardite"=true
-    B:"Generate Copper"=false
+    B:"Generate Copper"=true
     B:"Generate Copper Bushes"=true
     B:"Generate Essence Bushes"=true
     B:"Generate Gold Bushes"=true
@@ -362,7 +362,7 @@ worldgen {
     B:"Generate Surface Gold"=true
     B:"Generate Surface Iron"=true
     B:"Generate Surface Tin"=true
-    B:"Generate Tin"=false
+    B:"Generate Tin"=true
     B:"Generate Tin Bushes"=true
 }
 
