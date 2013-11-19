@@ -5,7 +5,7 @@ Hosted at www.darkserver.co.uk
 
 -Windows Install Instructions-
 
-1. Download the Minecraft launcher exe at minecraft.net/download
+1. Download the Minecraft launcher exe URL: https://minecraft.net/
 2. Run and login to the launcher using your minecraft account details
 3. Click the 'Profile Editor' and right click the white space selecting 'Add Profile'
 4. Open windows explorer, head to your C drive and make a new folder called 'Minecraft'
@@ -25,7 +25,7 @@ Hosted at www.darkserver.co.uk
 18. Click the box next to 'Use Version', scroll down to the bottom and select the version of forge you just installed
 19. Click 'Save Profile' and press play
 20. If everything worked properly you should see the forge overlay in the bottom left of your game window
-21. Add a new server and use the URL:'mc.darkserver.co.uk:25567'
+21. Add a new server and use the URL: mc.darkserver.co.uk:25567
 22. Enjoy DexTek
  
 /Darkrising
