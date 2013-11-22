@@ -27,5 +27,7 @@ Hosted at www.darkserver.co.uk
 20. If everything worked properly you should see the forge overlay in the bottom left of your game window
 21. Add a new server and use the URL: mc.darkserver.co.uk:25567
 22. Enjoy DexTek
+
+-Note!: If you're having problems don't forget to add permsize, double click on the profile, tick 'JVM Arguments' and paste in XX:MaxPermSize=128m
  
 /Darkrising
