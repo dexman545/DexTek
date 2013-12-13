@@ -1,6 +1,15 @@
 # Configuration file
 
 ####################
+# achievement properties
+####################
+
+"achievement properties" {
+    B:AchievementsEnabled=true
+}
+
+
+####################
 # alpha behavior
 ####################
 
@@ -25,7 +34,9 @@ battlegear {
 ####################
 
 block {
+    I:"Air Tank"=3246
     I:"Birch Barricade"=1483
+    I:"Blood Channel"=3189
     I:"Casting Channel"=3249
     I:"Clear Glass"=3223
     I:"Clear Stained Glass"=3225
@@ -35,7 +46,10 @@ block {
     I:"Crafting Station"=3233
     I:"Drying Rack"=3227
     I:"Essence Extractor"=3234
+    I:"Furnace Slab"=3192
     I:"Glass Pane"=3228
+    I:"Glue Block"=3219
+    I:"Glue Fluid Block"=3220
     I:"Held Item Block"=1472
     I:"Jungle Barricade"=1487
     I:Landmine=1470
@@ -50,14 +64,14 @@ block {
     I:"Molten Ardite"=3207
     I:"Molten Bronze"=3208
     I:"Molten Cobalt"=3206
-    I:"Molten Copper"=3203
-    I:"Molten Electrum"=3200
+    I:"Molten Copper"=3889
+    I:"Molten Electrum"=3892
     I:"Molten Emerald"=3216
     I:"Molten Ender"=3218
     I:"Molten Glass"=3214
-    I:"Molten Gold"=3202
+    I:"Molten Gold"=3890
     I:"Molten Invar"=3199
-    I:"Molten Iron"=3201
+    I:"Molten Iron"=3891
     I:"Molten Lead"=3196
     I:"Molten Manyullyn"=3210
     I:"Molten Nickel"=3197
@@ -69,6 +83,9 @@ block {
     I:"Molten Tin"=3204
     I:"Multi Brick"=1481
     I:"Multi Brick Fancy"=1467
+    I:"Nether Lava Tank"=3186
+    I:"Nether Seared Block"=3188
+    I:"Nether Smeltery"=3187
     I:"Oak Barricade"=1469
     I:"Ore Berry One"=1485
     I:"Ore Berry Two"=1486
@@ -76,6 +93,7 @@ block {
     I:"Ores Slag"=1475
     I:Punji=3232
     I:"Redstone Machines"=3226
+    I:SDX=3247
     I:"Seared Slab"=3230
     I:"Seared Table"=1477
     I:"Slime Channel"=3190
@@ -90,9 +108,11 @@ block {
     I:"Speed Slab"=3231
     I:"Spruce Barricade"=1482
     I:"Stained Glass"=3224
+    I:"Stone Ladder"=1479
     I:"Stone Torch"=1484
     I:"Tool Forge"=1468
     I:"Wood Tool Station"=1471
+    I:"Wooden Rail"=3250
     I:"Wool Slab 1"=3244
     I:"Wool Slab 2"=3245
 }
@@ -131,9 +151,17 @@ block {
 ####################
 
 dimblacklist {
+    # True: slime islands wont generate in any ages other than overworld(if enabled); False: will generate in all non-blackisted ages
     B:GenerateSlimeIslandInDim0Only=false
+
+    # Add dimension ID's to prevent slime islands from generating in them
     I:SlimeIslandDimBlacklist <
      >
+
+    # Generate slime islands in flat worlds
+    B:genIslandsFlat=false
+
+    # True: slime islands generate in overworld; False they do not generate
     B:slimeIslGenDim0=true
 }
 
@@ -143,6 +171,10 @@ dimblacklist {
 ####################
 
 equipables {
+    I:Exo-Boots=14119
+    I:Exo-Chestpiece=14117
+    I:Exo-Goggles=14116
+    I:Exo-Legs=14118
     I:Gloves=14111
     I:"Heart Canister"=14105
     I:"Heavy Boots"=14110
@@ -150,6 +182,10 @@ equipables {
     I:"Heavy Helmet"=14106
     I:"Heavy Pants"=14109
     I:Knapsack=14112
+    I:"Wooden Boots"=14110
+    I:"Wooden Chestplate"=14108
+    I:"Wooden Helmet"=14106
+    I:"Wooden Pants"=14109
 }
 
 
@@ -158,7 +194,11 @@ equipables {
 ####################
 
 experimental {
+    B:"Allow horses to be melted down for glue"=true
     B:"Items can be thrown into smelteries"=true
+
+    # Warning: Very buggy
+    B:"Use new adaptive Smeltery code"=false
 }
 
 
@@ -186,6 +226,7 @@ looks {
 ####################
 
 "patterns and misc" {
+    I:"Armor Pattern"=14025
     I:"Blank Patterns"=14019
     I:Buckets=14101
     I:"Essence Crystal"=14114
@@ -201,6 +242,31 @@ looks {
     I:"Tool Rod"=14021
     I:"Tool Shard"=14022
     I:"Wood Pattern"=14023
+}
+
+
+####################
+# smeltery output modification
+####################
+
+"smeltery output modification" {
+    # Number of ingots returned from smelting Aluminum Brass in the smeltery
+    I:"Aluminum Brass ingot return"=4
+
+    # Number of ingots returned from smelting Alumite in the smeltery
+    I:"Alumite ingot return"=3
+
+    # Number of ingots returned from smelting Bronze in the smeltery
+    I:"Bronze ingot return"=3
+
+    # Number of ingots returned from smelting ores in the smeltery
+    I:"Ingots per ore"=2
+
+    # Number of ingots returned from smelting Manyullyn in the smeltery
+    I:"Manyullyn ingot return"=1
+
+    # Number of ingots returned from smelting Pig Iron in the smeltery
+    I:"Pig Iron ingot return"=1
 }
 
 
@@ -263,7 +329,7 @@ tools {
     I:Excavator=14069
     I:"Frying Pan"=14058
     I:Hammer=14070
-    I:Hoe=31727
+    I:Hoe=31656
     I:Longbow=14062
     I:Longsword=14056
     I:"Lumber Axe"=14061
