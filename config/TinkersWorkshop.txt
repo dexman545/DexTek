@@ -10,16 +10,6 @@
 
 
 ####################
-# alpha behavior
-####################
-
-"alpha behavior" {
-    B:"Regenerate HP from food"=false
-    B:"Remove hunger"=false
-}
-
-
-####################
 # battlegear
 ####################
 
@@ -64,14 +54,14 @@ block {
     I:"Molten Ardite"=3207
     I:"Molten Bronze"=3208
     I:"Molten Cobalt"=3206
-    I:"Molten Copper"=3889
-    I:"Molten Electrum"=3892
+    I:"Molten Copper"=3203
+    I:"Molten Electrum"=3200
     I:"Molten Emerald"=3216
     I:"Molten Ender"=3218
     I:"Molten Glass"=3214
-    I:"Molten Gold"=3890
+    I:"Molten Gold"=3202
     I:"Molten Invar"=3199
-    I:"Molten Iron"=3891
+    I:"Molten Iron"=3201
     I:"Molten Lead"=3196
     I:"Molten Manyullyn"=3210
     I:"Molten Nickel"=3197
@@ -126,7 +116,7 @@ block {
     B:"Craft Stencil Tables"=true
     B:"Craft metals with Wood Patterns"=false
     B:"Craft vanilla metal blocks"=true
-    B:"Deny creation of non-metal mattocks"=false
+    B:"Deny creation of non-metal mattocks"=true
     B:"Enable Auto-Smelt and Fortune interaction"=true
     B:"Enable mod blue slime tools"=true
     B:"Enable mod bone tools"=true
@@ -138,7 +128,7 @@ block {
     B:"Enable mod stone tools"=true
     B:"Enable mod wooden tools"=true
     B:"Keep hunger on death"=true
-    B:"Keep levels on death"=true
+    B:"Keep levels on death"=false
     B:"Lower bronze output to 2 ingots"=false
     B:"Modifiers increase Mining Level"=true
     B:"Remove Vanilla Tool Recipes"=false
@@ -152,7 +142,7 @@ block {
 
 dimblacklist {
     # True: slime islands wont generate in any ages other than overworld(if enabled); False: will generate in all non-blackisted ages
-    B:GenerateSlimeIslandInDim0Only=false
+    B:GenerateSlimeIslandInDim0Only=true
 
     # Add dimension ID's to prevent slime islands from generating in them
     I:SlimeIslandDimBlacklist <
@@ -177,10 +167,6 @@ equipables {
     I:Exo-Legs=14118
     I:Gloves=14111
     I:"Heart Canister"=14105
-    I:"Heavy Boots"=14110
-    I:"Heavy Chestplate"=14108
-    I:"Heavy Helmet"=14106
-    I:"Heavy Pants"=14109
     I:Knapsack=14112
     I:"Wooden Boots"=14110
     I:"Wooden Chestplate"=14108
@@ -329,7 +315,7 @@ tools {
     I:Excavator=14069
     I:"Frying Pan"=14058
     I:Hammer=14070
-    I:Hoe=31656
+    I:Hoe=31691
     I:Longbow=14062
     I:Longsword=14056
     I:"Lumber Axe"=14061
@@ -350,15 +336,15 @@ tools {
 "ultra hardcore changes" {
     # Gives all tier 1 patterns when pattern chest is placed
     B:"Add Patterns to Pattern Chests"=false
-    B:"Add World Border"=true
+    B:"Add World Border"=false
 
     # Makes recipes for gold apples, carrots, and melon potions more expensive
     B:"Change Crafting Recipes"=false
     B:"Change Ghast drops to Gold Ingots"=false
     B:"Necrotic modifier only heals on hostile mob kills"=false
     B:"Passive Health Regen"=true
-    B:"Players drop heads on death"=false
-    I:"World Border Radius"=5000
+    B:"Players drop heads on death"=true
+    I:"World Border Radius"=1000
 }
 
 
@@ -397,7 +383,7 @@ worldgen {
     I:"Iron Surface Rarity"=400
     I:"Nether Ores Density"=8
     I:"Silver Bush Density"=1
-    I:"Slime Island Rarity"=450
+    I:"Slime Island Rarity"=1450
     I:"Tin Bush Density"=2
     I:"Tin Bush Max Y"=40
     I:"Tin Bush Min Y"=0
@@ -418,7 +404,7 @@ worldgen {
     B:"Generate Aluminum"=true
     B:"Generate Aluminum Bushes"=true
     B:"Generate Cobalt and Ardite"=true
-    B:"Generate Copper"=true
+    B:"Generate Copper"=false
     B:"Generate Copper Bushes"=true
     B:"Generate Essence Bushes"=true
     B:"Generate Gold Bushes"=true
@@ -428,7 +414,7 @@ worldgen {
     B:"Generate Surface Gold"=true
     B:"Generate Surface Iron"=true
     B:"Generate Surface Tin"=true
-    B:"Generate Tin"=true
+    B:"Generate Tin"=false
     B:"Generate Tin Bushes"=true
 }
 
