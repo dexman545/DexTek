@@ -35,7 +35,6 @@ block {
     I:"Crafting Slab"=3243
     I:"Crafting Station"=3233
     I:"Drying Rack"=3227
-    I:"Essence Extractor"=3234
     I:"Furnace Slab"=3192
     I:"Glass Pane"=3228
     I:"Glue Block"=3219
@@ -82,7 +81,6 @@ block {
     I:"Ores Gravel"=1488
     I:"Ores Slag"=1475
     I:Punji=3232
-    I:"Redstone Machines"=3226
     I:SDX=3247
     I:"Seared Slab"=3230
     I:"Seared Table"=1477
@@ -113,10 +111,11 @@ block {
 ####################
 
 "difficulty changes" {
+    B:"Allow creation of endstone"=true
     B:"Craft Stencil Tables"=true
     B:"Craft metals with Wood Patterns"=false
     B:"Craft vanilla metal blocks"=true
-    B:"Deny creation of non-metal mattocks"=true
+    B:"Deny creation of non-metal mattocks"=false
     B:"Enable Auto-Smelt and Fortune interaction"=true
     B:"Enable mod blue slime tools"=true
     B:"Enable mod bone tools"=true
@@ -128,8 +127,7 @@ block {
     B:"Enable mod stone tools"=true
     B:"Enable mod wooden tools"=true
     B:"Keep hunger on death"=true
-    B:"Keep levels on death"=false
-    B:"Lower bronze output to 2 ingots"=false
+    B:"Keep levels on death"=true
     B:"Modifiers increase Mining Level"=true
     B:"Remove Vanilla Tool Recipes"=false
     B:"Spawn beginner book"=true
@@ -142,7 +140,7 @@ block {
 
 dimblacklist {
     # True: slime islands wont generate in any ages other than overworld(if enabled); False: will generate in all non-blackisted ages
-    B:GenerateSlimeIslandInDim0Only=true
+    B:GenerateSlimeIslandInDim0Only=false
 
     # Add dimension ID's to prevent slime islands from generating in them
     I:SlimeIslandDimBlacklist <
@@ -198,6 +196,15 @@ general {
 
 
 ####################
+# logging
+####################
+
+logging {
+    B:"Disable tool build messages"=false
+}
+
+
+####################
 # looks
 ####################
 
@@ -215,7 +222,6 @@ looks {
     I:"Armor Pattern"=14025
     I:"Blank Patterns"=14019
     I:Buckets=14101
-    I:"Essence Crystal"=14114
     I:"Golden Head"=14113
     I:Jerky=14115
     I:"Jeweled Apple"=14107
@@ -243,7 +249,7 @@ looks {
     I:"Alumite ingot return"=3
 
     # Number of ingots returned from smelting Bronze in the smeltery
-    I:"Bronze ingot return"=3
+    I:"Bronze ingot return"=4
 
     # Number of ingots returned from smelting ores in the smeltery
     I:"Ingots per ore"=2
@@ -315,7 +321,7 @@ tools {
     I:Excavator=14069
     I:"Frying Pan"=14058
     I:Hammer=14070
-    I:Hoe=31691
+    I:Hoe=31743
     I:Longbow=14062
     I:Longsword=14056
     I:"Lumber Axe"=14061
@@ -343,7 +349,7 @@ tools {
     B:"Change Ghast drops to Gold Ingots"=false
     B:"Necrotic modifier only heals on hostile mob kills"=false
     B:"Passive Health Regen"=true
-    B:"Players drop heads on death"=true
+    B:"Players drop heads on death"=false
     I:"World Border Radius"=1000
 }
 
