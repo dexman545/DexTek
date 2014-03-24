@@ -1,4 +1,4 @@
-DexTek Pack for Minecraft 1.6.4
+-DexTek Pack for Minecraft 1.6.4-
 
 Hosted at: http://www.darkserver.co.uk
 Jenkins download: http://build.darkserver.co.uk/job/DexTek/
