@@ -2,6 +2,7 @@ DexTek Pack for Minecraft 1.6.4
 
 Hosted at: http://www.darkserver.co.uk
 Jenkins download: http://build.darkserver.co.uk/job/DexTek/
+DarkServerUK Wiki: http://wiki.darkserver.co.uk/Main_Page
 
 -MultiMC Install Instructions-
 1. Head over to http://multimc.org/ and download the MultiMC for your system
