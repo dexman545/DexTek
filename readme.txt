@@ -1,10 +1,18 @@
 DexTek Pack for Minecraft 1.6.4
 
-Hosted at www.darkserver.co.uk
+Hosted at: http://www.darkserver.co.uk
+Jenkins download: http://build.darkserver.co.uk/job/DexTek/
 
+-MultiMC Install Instructions-
+1. Head over to http://multimc.org/ and download the MultiMC for your system
+2. Unzip it somewhere and run the multimc.exe (or your systems version of it)
+3. If it asks you to login, login!
+4. Go to http://build.darkserver.co.uk/job/DexTek/ and download the mutlimc version of the zip
+5. If it is not already there, make an instances folder inside wherever your multimc is located
+6. Unzip the DexTek folder into the instances folder
+7. Re-launch MultiMC and double click the DexTek instance
 
--Windows Install Instructions -
-
+-Windows Install Instructions (Minecraft Launcher)-
 1. Download the Minecraft launcher exe URL: https://minecraft.net/
 2. Run and login to the launcher using your minecraft account details
 3. Click the 'Profile Editor' and right click the white space selecting 'Add Profile'
@@ -29,5 +37,3 @@ Hosted at www.darkserver.co.uk
 22. Enjoy DexTek
 
 -Note!: If you're having problems don't forget to add permsize, double click on the profile, tick 'JVM Arguments' and paste in XX:MaxPermSize=128m
- 
-/Darkrising
