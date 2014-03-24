@@ -3,7 +3,7 @@ DexTek Pack for Minecraft 1.6.4
 Hosted at www.darkserver.co.uk
 
 
--Windows Install Instructions-
+-Windows Install Instructions -
 
 1. Download the Minecraft launcher exe URL: https://minecraft.net/
 2. Run and login to the launcher using your minecraft account details
