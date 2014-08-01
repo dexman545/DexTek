@@ -13,17 +13,17 @@ terminal {
 }
 
 server1 {
-  input: [[obsidian, "oc:craftingRAMTier4", obsidian]
+  input: [[obsidian, "oc:craftingRAMTier3", obsidian]
           ["oc:circuitTier1", "oc:circuitTier2", "oc:circuitTier1"]
           [obsidian, "oc:craftingCircuitBoardPrinted", obsidian]]
 }
 server2 {
-  input: [[obsidian, "oc:craftingRAMTier5", obsidian]
+  input: [[obsidian, "oc:craftingRAMTier4", obsidian]
           ["oc:circuitTier2", "oc:circuitTier3", "oc:circuitTier2"]
           [obsidian, "oc:craftingCircuitBoardPrinted", obsidian]]
 }
 server3 {
-  input: [[obsidian, "oc:craftingRAMTier6", obsidian]
+  input: [[obsidian, "oc:craftingRAMTier5", obsidian]
           ["oc:circuitTier3", "oc:circuitTier3", "oc:circuitTier3"]
           [obsidian, "oc:craftingCircuitBoardPrinted", obsidian]]
 }
@@ -33,22 +33,18 @@ ram1 {
           ["", "oc:craftingCircuitBoardPrinted", ""]]
 }
 ram2 {
-  input: [["oc:circuitTier1", "oc:circuitTier1", "oc:circuitTier1"]
-          ["", "oc:craftingCircuitBoardPrinted", ""]]
-}
-ram3 {
   input: [["oc:circuitTier2", "", "oc:circuitTier2"]
           ["", "oc:craftingCircuitBoardPrinted", ""]]
 }
-ram4 {
+ram3 {
   input: [["oc:circuitTier2", "oc:circuitTier2", "oc:circuitTier2"]
           ["", "oc:craftingCircuitBoardPrinted", ""]]
 }
-ram5 {
+ram4 {
   input: [["oc:circuitTier3", "", "oc:circuitTier3"]
           ["", "oc:craftingCircuitBoardPrinted", ""]]
 }
-ram6 {
+ram5 {
   input: [["oc:circuitTier3", "oc:circuitTier3", "oc:circuitTier3"]
           ["", "oc:craftingCircuitBoardPrinted", ""]]
 }
@@ -75,7 +71,7 @@ hdd3 {
 }
 
 abstractBusCard {
-  input: [["StargateTech2:block.busCable", {item="StargateTech2:item.naquadah", subID=3}, ""]
+  input: [[busCable, {item=naquadah, subID=8}, ""]
           ["", "oc:craftingCard", ""]]
 }
 graphicsCard1 {
@@ -83,15 +79,15 @@ graphicsCard1 {
           ["", "oc:craftingCard", ""]]
 }
 graphicsCard2 {
-  input: [["oc:circuitTier2", "oc:craftingALU", "oc:craftingRAMTier3"]
+  input: [["oc:circuitTier2", "oc:craftingALU", "oc:craftingRAMTier2"]
           ["", "oc:craftingCard", ""]]
 }
 graphicsCard3 {
-  input: [["oc:circuitTier3", "oc:craftingALU", "oc:craftingRAMTier5"]
+  input: [["oc:circuitTier3", "oc:craftingALU", "oc:craftingRAMTier4"]
           ["", "oc:craftingCard", ""]]
 }
 internetCard {
-  input: [["oc:craftingInterweb", "oc:circuitTier2", torchRedstoneActive]
+  input: [[web, "oc:circuitTier2", torchRedstoneActive]
           ["", "oc:craftingCard", obsidian]]
 }
 redstoneCard {
@@ -107,11 +103,6 @@ wlanCard {
           ["", "oc:craftingCard", ""]]
 }
 
-angelUpgrade {
-  input: [[ingotIron, enderPearl, ingotIron]
-          ["oc:circuitTier1", pistonStickyBase, "oc:circuitTier1"]
-          [ingotIron, enderPearl, ingotIron]]
-}
 craftingUpgrade {
   input: [[ingotIron, "", ingotIron]
           ["oc:circuitTier1", workbench, "oc:circuitTier1"]
@@ -227,12 +218,6 @@ card {
   input: [[nuggetIron, "", ""]
           [nuggetIron, "oc:craftingCircuitBoardPrinted", ""]
           [nuggetIron, nuggetGold, ""]]
-}
-
-interweb {
-  input: [[string, string, string]
-          [string, enderPearl, string]
-          [string, string, string]]
 }
 
 adapter {
